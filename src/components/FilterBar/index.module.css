@@ -1,0 +1,19 @@
+.filterContainer {
+    margin: 10px 0;    
+  }
+  
+  .filterSelect {
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #4b4b4b;
+    background-color: lightblue;
+    color: #333;
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+
+  .filterSelect:hover {
+    transform: scale(1.02);
+  }
+  

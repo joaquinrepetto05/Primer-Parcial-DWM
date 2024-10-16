@@ -1,0 +1,42 @@
+/* Details styles */
+
+#root {
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Contenedor del header (encabezado) */
+.contenedorHeader {
+  display: flex; /* Usa un layout flexible para los elementos hijos */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  justify-content: flex-end; /* Alinea los elementos del header a la derecha */
+}
+
+/* Estilo para el título */
+.contenedorTitulo {
+  justify-content: center; /* Centra el título */
+  font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+/* Contenedor para los botones */
+.contenedorBoton {
+  display: flex; /* Usa un layout flexible para los elementos hijos */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+}
+
+/* Contenedor de las tarjetas */
+.contenedorTarjetas {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  display: flex; /* Usa un layout flexible para organizar las tarjetas */
+  flex-direction: column; /* Muestra las tarjetas en una columna (una debajo de la otra) en pantallas pequeñas */
+  align-items: center; /* Centra las tarjetas horizontalmente */
+}
+
+/* Media Queries - Cambios para pantallas más grandes (768px o más) */
+@media (min-width: 768px) {
+  .contenedorTarjetas {
+    flex-direction: row; /* En pantallas grandes, muestra las tarjetas en fila */
+    justify-content: space-around; /* Distribuye las tarjetas uniformemente con espacios entre ellas */
+  }
+}

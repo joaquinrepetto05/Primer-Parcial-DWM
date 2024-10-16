@@ -1,0 +1,36 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contenedorHeader {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.contenedorTitulo {
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contenedorBoton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedorTarjetas {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Cambia a columna en móviles */
+  align-items: center; /* Centra las tarjetas */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .contenedorTarjetas {
+    flex-direction: row; /* Cambia a fila en pantallas grandes */
+    justify-content: space-around; /* Espaciado en pantallas grandes */
+  }
+}

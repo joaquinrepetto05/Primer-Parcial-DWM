@@ -1,0 +1,67 @@
+/* Home styles */
+
+#root {
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Contenedor del encabezado */
+.contenedorHeader {
+  display: flex; /* Layout flexible para los elementos hijos */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  justify-content: space-between; /* Alinea los elementos del header a la derecha */
+}
+
+/* Estilo para el título */
+.contenedorTitulo {
+  justify-content: center; /* Centra el título */
+  font-weight: bold; /* Negrita para el título */
+}
+
+/* Contenedor para los botones */
+.contenedorBoton {
+  display: flex; /* Layout flexible para los elementos hijos */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Contenedor de las tarjetas */
+.contenedorTarjetas {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  display: flex; /* Layout flexible para organizar las tarjetas */
+  flex-direction: column; /* Muestra las tarjetas en columna (en móviles) */
+  align-items: center; /* Centra horizontalmente las tarjetas */
+}
+
+/* Estilos del Modal */
+
+.modalInput {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px 0; /* Espaciado externo */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #afafaf; /* Borde gris claro */
+  font-size: 1em; /* Tamaño de la fuente */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  background-color: #8b8b8b; /* Color de fondo gris */
+  color: #333; /* Color del texto */
+}
+
+/* Efecto de foco para el input del Modal */
+.modalInput:focus {
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño al enfocarse */
+  border: 1.5px solid #333; /* Borde más oscuro al enfocarse */
+}
+
+/* Estilos para el placeholder del input del Modal */
+.modalInput::placeholder {
+  color: #33333397; /* Color del placeholder semi-transparente */
+}
+
+/* Media Queries - Cambios para pantallas grandes (768px o más) */
+@media (min-width: 768px) {
+  .contenedorTarjetas {
+    flex-direction: row; /* Muestra las tarjetas en fila en pantallas grandes */
+    justify-content: space-around; /* Distribuye las tarjetas con espacio entre ellas */
+  }
+}
